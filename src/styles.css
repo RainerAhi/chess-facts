@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lakesight-personal-use-only');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Solway:wght@700&display=swap');
+@import url("https://db.onlinewebfonts.com/c/14679a7a97d388dac3a0380375ca4afe?family=Neometric+Alt+Heavy");
+@import url("https://db.onlinewebfonts.com/c/21553b99c039b140f424afd283a33017?family=Mark+Web+W04+Ultra");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@font-face {
+  font-family: 'Lakesight';
+  src: url('./Lakesight.woff2') format('woff2'),
+      url('./Lakesight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.background-box {
+  width: 93%;
+  height: 88%;
+  position: fixed;
+  z-index: 0;
+  background-color: #f1e3d9;
+  margin-top: 3.25%;
+  margin-left: 3.5%;
+  display: flex;
+}
+
+.circle {
+  z-index: 1;
+  background-color: #ef6f6c;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  margin-top: 21%;
+  margin-left: 4%;
+}
+
+.box {
+  z-index: 1;
+  background-color: #084366;
+  width: 225px;
+  height: 225px;
+  margin-top: 2%;
+  margin-left: 60%;
+  border-radius: 200px;
+}
+
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 6%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  z-index: 10;
+}
+
+.footer {
+  background-color: white;
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  z-index: 10;
+  margin-top: 94.5vh;
+}
+
+.nav h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  margin-top: 1%;
+}
+
+.nav h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #3A3838;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* TRACK */
+::-webkit-scrollbar-track {
+  background-color: #f1e3d9;
+}
+
+/* HANDLE */
+::-webkit-scrollbar-thumb {
+  background-color: #232223;
+  height: 5%;
+}
+
+.main--container {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.experience {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  pointer-events: none;
+}
+
+section {
+  height: 100vh;
+  pointer-events: all;
+}
+
+.first--div {
+  position: absolute;
+  margin-top: 1%;
+  width: 50%;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  color: #232223;
+  font-size: 8rem;
+  margin-top: 15%;
+  width: 90%;
+  margin-left: 15%;
+  line-height: 7.5rem;
+  text-align: left;
+  letter-spacing: 0.5rem;
+}
+
+.fact {
+  font-family: 'Roboto', sans-serif;
+  color: #232223;
+  font-size: 8rem;
+  margin-top: 15%;
+  width: 90%;
+  margin-left: 30%;
+  line-height: 7.5rem;
+  text-align: left;
+  letter-spacing: 0.5rem;
+}
+
+.ptext {
+  width: 50%;
+  text-align: left;
+  margin-left: 30%;
+  margin-top: 20%;
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.pftext {
+  width: 50%;
+  text-align: left;
+  margin-left: 30%;
+  top: 0;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.atwo, .athree, .afour, .afive, .asix, .aseven, .aeight, .anine, .aten, .aeleven, .atwelve, .athirdteen, .afourteen, .afifthteen, .asixteen, .aseventeen, .aeightteen {
+  opacity: 0;
+}
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    background-color: #f1e3d9;
+  }
+
+  .backg {
+    background-color: #f1e3d9;
+  }
+
+  .first--div {
+    position: absolute;
+    margin-top: 1%;
+    width: 100%;
+  }
+
+  .nav {
+    background-color: white;
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .nav h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  
+  .nav h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #3A3838;
+    font-size: 1rem;
+  }
+
+  .background-box {
+    width: 0%;
+    height: 0%;
+    z-index: -10;
+    background-color: #f1e3d9;
+  }
+
+  .main {
+    background-color: #f1e3d9;
+  }
+
+  .experience {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .title {
+    font-family: 'Roboto', sans-serif;
+    color: #232223;
+    font-size: 3rem;
+    margin-top: 50%;
+    width: 100%;
+    margin-left: 0%;
+    line-height: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.5rem;
+  }
+  
+  .fact {
+    font-family: 'Roboto', sans-serif;
+    color: #232223;
+    font-size: 3rem;
+    margin-top: 0%;
+    width: 90%;
+    margin-left: 30%;
+    line-height: 2.5rem;
+    text-align: left;
+    letter-spacing: 0.5rem;
+  }
+  
+  .ptext {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0%;
+    margin-top: 20%;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  .pftext {
+    width: 50%;
+    text-align: left;
+    margin-left: 30%;
+    top: 0;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  .footer {
+    background-color: rebeccapurple;
+    width: 0%;
+    height: 0%;
+  }
+
+}
+
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  width: 100vw;
+  height: 100vh;
+  z-index: 12;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #f1e3d9;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.loading-screen--hidden {
+  animation: fade-out 0.5s ease-in-out forwards 1s;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading-screen__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #232223;
+  margin: 0;
+}
+
+.progress__container {
+  width: 100%;
+  height: 1rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.progress__bar {
+  width: 0;
+  height: 100%;
+  background-color: #232223;
+  transition: width 0.5s ease-in-out;
+}
+
+
+
